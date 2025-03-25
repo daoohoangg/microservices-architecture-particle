@@ -24,13 +24,21 @@ The system consists of **8 microservices**:
 ## 🏗️ **Project Architecture**
 
 📦 spring-boot-microservices
+
 ┣ 📂 config-server
+
 ┣ 📂 eureka-server
+
 ┣ 📂 api-gateway
+
 ┣ 📂 auth-service
+
 ┣ 📂 job-service
+
 ┣ 📂 user-service
+
 ┣ 📂 notification-service
+
 ┣ 📂 file-storage-service
 
 Each service runs independently and communicates through **API Gateway** & **Eureka Service Discovery**.
