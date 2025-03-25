@@ -22,7 +22,17 @@ The system consists of **8 microservices**:
 ---
 
 ## 🏗️ **Project Architecture**
-📦 spring-boot-microservices ┣ 📂 config-server ┣ 📂 eureka-server ┣ 📂 api-gateway ┣ 📂 auth-service ┣ 📂 job-service ┣ 📂 user-service ┣ 📂 notification-service ┣ 📂 file-storage-service
+
+📦 spring-boot-microservices
+┣ 📂 config-server
+┣ 📂 eureka-server
+┣ 📂 api-gateway
+┣ 📂 auth-service
+┣ 📂 job-service
+┣ 📂 user-service
+┣ 📂 notification-service
+┣ 📂 file-storage-service
+
 Each service runs independently and communicates through **API Gateway** & **Eureka Service Discovery**.
 
 ---
@@ -41,7 +51,7 @@ Each service runs independently and communicates through **API Gateway** & **Eur
 - 🔍 **Eureka Server & Client**
 
 ### 🗄 **Database & Storage**
-- 🐘 **PostgreSQL**
+- 🐬 **MySQL**
 - 📦 **Redis**
 - 📜 **Kafka**
 - 🐳 **Docker**
@@ -69,19 +79,11 @@ Each service runs independently and communicates through **API Gateway** & **Eur
 git clone https://github.com/daoohoangg/microservices-architecture-particle.git
 cd spring-boot-microservices
 
-### 2️⃣ **Run Services using Docker **
-```sh
-docker-compose up -d
-
-### 3️⃣ **Run Each Service Manually**
-```sh
-mvn spring-boot:run
-
 ### 📫 **API Documentation**
 ```sh
 http://localhost:8080/swagger-ui.html
 
-We welcome contributions! To contribute:
+## We welcome contributions! To contribute:
 
 Fork the repository 🍴
 
