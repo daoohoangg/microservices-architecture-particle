@@ -3,6 +3,7 @@
 ## 📖 About the Project
 
 This project follows the **Spring Boot Microservices** architecture, allowing users to:
+
 ✅ **Register and log in** via the **Auth Service** using JWT authentication.  
 ✅ **Send requests** to different services through the **API Gateway**.  
 ✅ **Use role-based access control** (`ADMIN` & `USER`).  
