@@ -1,8 +1,8 @@
-package com.tugas_integra.uas.security;
-
+package com.example.authservice.config;
 
 import com.example.authservice.jwt.AuthEntryPointJwt;
 import com.example.authservice.jwt.AuthTokenFilter;
+import com.example.authservice.service.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;

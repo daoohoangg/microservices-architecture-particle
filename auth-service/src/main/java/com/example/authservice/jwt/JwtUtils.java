@@ -3,6 +3,7 @@ package com.example.authservice.jwt;
 import java.security.Key;
 import java.util.Date;
 
+import com.example.authservice.service.UserDetailsImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
