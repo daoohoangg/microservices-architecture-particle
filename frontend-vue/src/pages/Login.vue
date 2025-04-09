@@ -19,6 +19,6 @@ const handleLogin = async () => {
   <form @submit.prevent="handleLogin">
     <input v-model="email" placeholder="Email" />
     <input type="password" v-model="password" placeholder="Password" />
-    <button type="submit">Login</button>
+    <button type="submit" class="text-blue-200">Login</button>
   </form>
 </template>
