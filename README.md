@@ -91,7 +91,7 @@ cd spring-boot-microservices
 ```sh
 http://localhost:8080/swagger-ui.html
 
-## We welcome contributions! To contribute:
+### **We welcome contributions! To contribute:**
 
 Fork the repository 🍴
 
