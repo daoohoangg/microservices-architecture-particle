@@ -85,10 +85,9 @@ Each service runs independently and communicates through **API Gateway** & **Eur
 ### 1️⃣ **Clone the Repository**
 ```sh
 git clone https://github.com/daoohoangg/microservices-architecture-particle.git
-cd spring-boot-microservices
+cd microservices-architecture-particle
 
 ### 📫 **API Documentation**
-```sh
 http://localhost:8080/swagger-ui.html
 
 ### **We welcome contributions! To contribute:**
