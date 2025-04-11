@@ -1,31 +1,28 @@
 package com.example.authservice.entity;
 
-import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import java.util.HashSet;
 import java.util.Set;
 
-@Entity
-@Table(name = "roles")
-@Data
-@AllArgsConstructor
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
+
+import lombok.*;
+import lombok.experimental.FieldDefaults;
+
+@Getter
+@Setter
+@Builder
 @NoArgsConstructor
+@AllArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE)
+@Entity
 public class Role {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    String name;
 
-    @Enumerated(EnumType.STRING)
-    @Column(length = 20)
-    private AccountRole name;
+    String description;
 
-    @ManyToMany(mappedBy = "roles")
-    private Set<Account> accounts = new HashSet<>();
+    @ManyToMany
+    Set<Permission> permissions;
 
-    public Role(AccountRole name) {
-        this.name = name;
-    }
 }

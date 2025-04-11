@@ -1,13 +1,10 @@
 package com.example.authservice.entity;
 
-
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-import java.util.Set;
-
-
 @Getter
 @Setter
 @Builder
@@ -15,16 +12,9 @@ import java.util.Set;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Entity
-public class Account {
+public class Permission {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    String id;
+    String name;
 
-    String username;
-    String password;
-
-    @ManyToMany
-    Set<Role> roles;
+    String description;
 }
-
-
