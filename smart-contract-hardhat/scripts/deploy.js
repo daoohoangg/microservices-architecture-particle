@@ -4,6 +4,8 @@ async function main() {
   const Contract = await hre.ethers.getContractFactory("MyContract");
   const contract = await Contract.deploy();
 
+  await contract.deployed();
+
   console.log(`Contract deployed to: ${contract.target}`);
 }
 
